@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Student Productivity App - Home</title>
+
+    <!-- Include Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" id="brand" href="#">Ontrack.io</a>
+    </div>
+  </nav>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Student Activity Tracker</h1>
+      <p class="lead">
+        A simple web app that helps students track and manage their daily
+        activities.
+      </p>
+      <hr class="my-4" />
+      <p>Sign up now to get started.</p>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="/login_signup" role="button"
+          >Sign Up</a
+        >
+      </p>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Track Your Activities</h2>
+        <p>
+          Easily track the time you spend on different activities, so you can
+          see where your time is going and make more productive choices.
+        </p>
+        <p>
+          <a class="btn btn-secondary" href="#" role="button"
+            >Learn more &raquo;</a
+          >
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h2>Manage Your Time</h2>
+        <p>
+          Set goals and priorities for your day, and use the app to help you
+          stay on track and make the most of your time.
+        </p>
+        <p>
+          <a class="btn btn-secondary" href="#" role="button"
+            >Learn more &raquo;</a
+          >
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h2>Stay Focused</h2>
+        <p>
+          Use the app to help you stay focused on your tasks, and avoid
+          distractions that can waste your time and energy.
+        </p>
+        <p>
+          <a class="btn btn-secondary" href="#" role="button"
+            >Learn more &raquo;</a
+          >
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <%- include('partials/footer')-%>
+</html>
