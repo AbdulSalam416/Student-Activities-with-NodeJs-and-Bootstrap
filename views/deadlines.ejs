@@ -1,0 +1,17 @@
+<%- include('partials/header') -%>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th>Due Dates</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for(let i=0; i<dueDates.length; i++){ %>
+      <tr>
+        <td><%= dueDates[i] %></td>
+      </tr>
+      <% } %>
+    </tbody>
+  </table>
+<%- include('partials/footer')-%>
