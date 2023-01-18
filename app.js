@@ -12,6 +12,7 @@ const GoogleStrategy = require("passport-google-oauth20").Strategy;
 const strategies = require("./controller/strategies");
 
 const User = require("./models/users.js");
+const Activity = require("./models/activities.js");
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());

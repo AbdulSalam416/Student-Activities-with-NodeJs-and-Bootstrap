@@ -4,6 +4,8 @@ const passport = require("passport");
 var LocalStrategy = require("passport-local").Strategy;
 
 const User = require("../models/users.js");
+const Activity = require("../models/activities.js");
+
 const reg = require("../controller/reg");
 passport.use(new LocalStrategy(User.authenticate()));
 
@@ -64,26 +66,16 @@ router.get(
   }
 );
 
-router.get("/activities", (req, res) => {
-  res.render("tasks", { title: "Activities" });
-});
+router.get("/activity", reg.viewActivities);
 
-router.get("/deadlines", (req, res) => {
-  res.render("tasks", { title: "Dealines" });
-});
+router.get("/deadlines", reg.viewDeadlines);
 
-router.get("/projects", (req, res) => {
-  res.render("tasks", { title: "Projects" });
-});
+router.get("/project", reg.viewProjects);
 
 router.get("/addItem", (req, res) => {
   res.render("activity_form");
 });
 
-router.post("/addItem", (req, res) => {
-  const activity = req.body.activityTitle;
-  const description = req.body.activityDescription;
-  const deadline = req.body.deadlineDate;
-});
+router.post("/addItem", reg.addItem);
 
 module.exports = router;
